@@ -1,3 +1,2 @@
 langchain==0.0.316
 dotenv==1.0.1
-translate==3.6.1
