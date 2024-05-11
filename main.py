@@ -1,6 +1,4 @@
 import streamlit as st
-import googletrans
-from googletrans import Translator
 import os
 from langchain.llms import GooglePalm
 from dotenv import load_dotenv
@@ -14,7 +12,7 @@ st.info("শমসের নিজেকে আপডেট করতে থা�
 st.title("🤓সবজান্তা শমসের🤓 V.0.1")
 st.subheader("জিজ্ঞাসা করুন.....")
 
-translating=Translator()
+translating=translate.Translator(to_lang='eng')
 question=translating.translate(st.text_input("প্রশ্ন: "))
 
 llm=GooglePalm(google_api_key=os.environ['google_api_key'], temperature=0)
