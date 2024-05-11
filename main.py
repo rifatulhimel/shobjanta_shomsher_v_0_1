@@ -1,4 +1,5 @@
 import streamlit as st
+import googletrans
 from googletrans import Translator
 import os
 from langchain.llms import GooglePalm
