@@ -8,7 +8,7 @@ import translate
 from langchain.agents import AgentType, initialize_agent, load_tools
 
 st.info("শমসের নিজেকে আপডেট করতে থাকবে")
-
+os.environ['google_api_key'] = "AIzaSyBr6EDFrXwaFtJgros34YlqdQYTL1ehT88"
 
 st.title("🤓সবজান্তা শমসের🤓 V.0.1")
 st.subheader("জিজ্ঞাসা করুন.....")
