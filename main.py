@@ -12,7 +12,7 @@ st.info("শমসের নিজেকে আপডেট করতে থা�
 st.title("🤓সবজান্তা শমসের🤓 V.0.1")
 st.subheader("জিজ্ঞাসা করুন.....")
 
-translating=translate.Translator(to_lang='eng')
+translating=translate.Translator(from_lang="bn",to_lang="en")
 question=translating.translate(st.text_input("প্রশ্ন: "))
 
 llm=GooglePalm(google_api_key=os.environ['google_api_key'], temperature=0)
