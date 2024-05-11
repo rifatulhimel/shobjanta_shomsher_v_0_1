@@ -20,7 +20,7 @@ llm=GooglePalm(google_api_key=os.environ['google_api_key'], temperature=0)
 
 
 def shobjanta():
-    tools=load_tools(['wikipedia', 'llm-math'], llm=llm)
+    tools=load_tools(['wikipedia'], llm=llm)
     agent=initialize_agent(
         tools,
         llm,
